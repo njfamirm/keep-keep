@@ -1,0 +1,14 @@
+{
+  "name": "keep-keep",
+  "description": "keep your keep!",
+  "version": "0.0.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://keep.google.com/*"],
+      "js": ["./src/index.js"]
+    }
+  ],
+  "permissions": ["tabs"],
+  "host_permissions": ["https://keep.google.com/*"]
+}
